@@ -109,8 +109,13 @@ const FeaturedWorks = () => {
           {FeaturedData.map((project, idx) => (
             <motion.div
               layout
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={
+                viewMode === "grid"
+                  ? { opacity: 0, x: idx % 2 === 0 ? -100 : 100, y: 0 }
+                  : { opacity: 0, x: 0, y: -50 }
+              }
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{
                 duration: 0.6,

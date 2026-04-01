@@ -83,9 +83,14 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 2.6, ease: "easeOut" }}
         >
-          <button className="px-8 py-3.5 md:py-4 rounded-full bg-[#36363A] text-white hover:text-[#36363A] hover:bg-white text-sm md:text-base font-medium hover:scale-105 transition-all duration-300 hover:border hover:border-[#36363A]">
+          <a 
+            href="mailto:dejiobasan02@gmail.com" 
+            target="_blank" 
+            rel="noreferrer"
+            className="px-8 py-3.5 md:py-4 rounded-full bg-[#36363A] text-white hover:text-[#36363A] hover:bg-white text-sm md:text-base font-medium hover:scale-105 transition-all duration-300 hover:border hover:border-[#36363A]"
+          >
             Contact
-          </button>
+          </a>
           <button 
             onClick={() => document.getElementById("featured")?.scrollIntoView({ behavior: "smooth" })}
             className="px-8 py-3.5 md:py-4 rounded-full border border-[#36363A] text-[#36363A] text-sm md:text-base font-medium hover:bg-[#36363A] hover:text-white hover:scale-105 transition-all duration-300"
