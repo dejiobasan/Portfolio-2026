@@ -1,6 +1,11 @@
 import { Spinner } from "@/components/ui/spinner";
 import { lazy, Suspense } from "react";
 
+const HeroSection = lazy(() => import("./HeroSection"));
+const FeaturedWorks = lazy(() => import("./FeaturedWorks"));
+const AboutSection = lazy(() => import("./AboutSection"));
+const Testimonials = lazy(() => import("./Testimonials"));
+const FooterSection = lazy(() => import("./FooterSection"));
 
 const HomePage = () => {
   return (
@@ -13,7 +18,11 @@ const HomePage = () => {
           </div>
         }
       >
-        <></>
+        <HeroSection />
+        <FeaturedWorks />
+        <AboutSection />
+        <Testimonials />
+        <FooterSection />
       </Suspense>
     </div>
   );
