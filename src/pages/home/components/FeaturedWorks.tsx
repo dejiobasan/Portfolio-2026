@@ -59,10 +59,6 @@ const FeaturedData = [
 const FeaturedWorks = () => {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
-  const openLink = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
-
   return (
     <section
       id="featured"
@@ -107,7 +103,7 @@ const FeaturedWorks = () => {
       >
         <AnimatePresence mode="popLayout">
           {FeaturedData.map((project, idx) => (
-            <motion.div
+            <motion.a
               layout
               initial={
                 viewMode === "grid"
@@ -130,7 +126,9 @@ const FeaturedWorks = () => {
               } ${
                 viewMode === "grid" ? "rounded-[40px]" : "rounded-[24px]"
               } overflow-hidden bg-[#f3f4f6] relative cursor-pointer border border-gray-200/60 hover:shadow-2xl hover:shadow-gray-200/50 transition-shadow duration-500`}
-              onClick={() => openLink(project.link)}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {viewMode === "grid" && (
                 <div className="relative w-full h-[400px] overflow-hidden bg-[#e5e7eb]">
@@ -191,7 +189,7 @@ const FeaturedWorks = () => {
                   </motion.div>
                 </div>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </AnimatePresence>
       </motion.div>
