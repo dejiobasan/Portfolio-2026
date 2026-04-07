@@ -16,6 +16,7 @@ const FooterSection = () => {
           <a
             href="https://github.com/dejiobasan"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-gray-300 transition-colors hover:underline"
           >
             Github
@@ -23,6 +24,7 @@ const FooterSection = () => {
           <a
             href="https://www.instagram.com/deji_obs/"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-gray-300 transition-colors hover:underline"
           >
             Instagram
@@ -30,6 +32,7 @@ const FooterSection = () => {
           <a
             href="https://www.linkedin.com/in/ayodeji-obasan-gmnse-9096151b9/"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-gray-300 transition-colors hover:underline"
           >
             LinkedIn
@@ -37,6 +40,7 @@ const FooterSection = () => {
           <a
             href="mailto:dejiobasan02@gmail.com"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-gray-300 transition-colors hover:underline"
           >
             Email
