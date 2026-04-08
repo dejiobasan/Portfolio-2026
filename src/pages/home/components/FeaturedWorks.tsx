@@ -65,13 +65,13 @@ const FeaturedWorks = () => {
       className="py-20 px-4 md:px-8 max-w-[1280px] mx-auto w-full font-sans"
     >
       <div className="flex flex-col md:flex-row items-center justify-between mb-16 relative w-full">
-        <div className="flex items-center gap-1 border border-gray-200 rounded-full p-1 bg-white order-2 md:order-1 mt-8 md:mt-0 shadow-sm z-10 w-fit">
+        <div className="flex items-center gap-1 border border-gray-200 dark:border-gray-800 rounded-full p-1 bg-white dark:bg-[#1E1E20] order-2 md:order-1 mt-8 md:mt-0 shadow-sm z-10 w-fit">
           <button
             onClick={() => setViewMode("grid")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-[15px] font-semibold transition-all duration-300 ${
               viewMode === "grid"
-                ? "bg-[#36363A] text-white shadow-md"
-                : "bg-transparent text-gray-500 hover:text-gray-900"
+                ? "bg-[#36363A] dark:bg-white text-white dark:text-[#111113] shadow-md"
+                : "bg-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
             }`}
           >
             <LayoutGrid size={18} /> Grid
@@ -80,15 +80,15 @@ const FeaturedWorks = () => {
             onClick={() => setViewMode("list")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-[15px] font-semibold transition-all duration-300 ${
               viewMode === "list"
-                ? "bg-[#36363A] text-white shadow-md"
-                : "bg-transparent text-gray-500 hover:text-gray-900"
+                ? "bg-[#36363A] dark:bg-white text-white dark:text-[#111113] shadow-md"
+                : "bg-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
             }`}
           >
             <List size={18} /> List
           </button>
         </div>
 
-        <h2 className="text-4xl md:text-[44px] font-bold text-[#36363A] order-1 md:order-2 md:absolute left-1/2 md:-translate-x-1/2 tracking-tight">
+        <h2 className="text-4xl md:text-[44px] font-bold text-[#36363A] dark:text-gray-100 order-1 md:order-2 md:absolute left-1/2 md:-translate-x-1/2 tracking-tight">
           Featured Works
         </h2>
       </div>
@@ -122,16 +122,16 @@ const FeaturedWorks = () => {
               className={`group flex ${
                 viewMode === "grid"
                   ? "flex-col w-full max-w-[620px] aspect-square"
-                  : "flex-row items-center p-4 bg-white w-full"
+                  : "flex-row items-center p-4 bg-white dark:bg-[#1E1E20] w-full"
               } ${
                 viewMode === "grid" ? "rounded-[40px]" : "rounded-[24px]"
-              } overflow-hidden bg-[#f3f4f6] relative cursor-pointer border border-gray-200/60 hover:shadow-2xl hover:shadow-gray-200/50 transition-shadow duration-500`}
+              } overflow-hidden bg-[#f3f4f6] dark:bg-[#1E1E20] relative cursor-pointer border border-gray-200/60 dark:border-gray-800 hover:shadow-2xl hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-shadow duration-500`}
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
             >
               {viewMode === "grid" && (
-                <div className="relative w-full h-[400px] overflow-hidden bg-[#e5e7eb]">
+                <div className="relative w-full h-[400px] overflow-hidden bg-[#e5e7eb] dark:bg-gray-800">
                   <motion.img
                     src={project.image}
                     alt={project.title}
@@ -145,7 +145,7 @@ const FeaturedWorks = () => {
                 className={`${
                   viewMode === "grid"
                     ? "absolute bottom-0 w-full"
-                    : "flex-1 w-full px-4 sm:px-6 py-2 bg-white flex items-center justify-between"
+                    : "flex-1 w-full px-4 sm:px-6 py-2 bg-white dark:bg-[#1E1E20] flex items-center justify-between"
                 }`}
               >
                 {viewMode === "grid" && (
@@ -153,7 +153,7 @@ const FeaturedWorks = () => {
                     src={Vector}
                     alt=""
                     draggable={false}
-                    className="w-full h-auto block pointer-events-none select-none z-0"
+                    className="w-full h-auto block pointer-events-none select-none z-0 dark:brightness-50"
                   />
                 )}
 
@@ -167,15 +167,15 @@ const FeaturedWorks = () => {
                   <h3
                     className={`${
                       viewMode === "grid"
-                        ? "text-2xl md:text-[28px] font-bold text-[#36363A] max-w-[70%] leading-tight"
-                        : "text-2xl md:text-3xl font-bold text-[#36363A] max-w-[75%] leading-tight"
+                        ? "text-2xl md:text-[28px] font-bold text-[#36363A] dark:text-gray-100 max-w-[70%] leading-tight"
+                        : "text-2xl md:text-3xl font-bold text-[#36363A] dark:text-gray-100 max-w-[75%] leading-tight"
                     }`}
                   >
                     {project.title}
                   </h3>
 
                   <motion.div
-                    className="w-[56px] h-[56px] md:w-[64px] md:h-[64px] rounded-full bg-[#36363A] text-white flex items-center justify-center shrink-0 shadow-[0_8px_16px_rgba(0,0,0,0.1)] relative"
+                    className="w-[56px] h-[56px] md:w-[64px] md:h-[64px] rounded-full bg-[#36363A] dark:bg-white text-white dark:text-[#111113] flex items-center justify-center shrink-0 shadow-[0_8px_16px_rgba(0,0,0,0.1)] relative"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

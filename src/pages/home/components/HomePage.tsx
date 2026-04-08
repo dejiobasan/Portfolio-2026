@@ -13,8 +13,8 @@ const HomePage = () => {
       <Suspense
         fallback={
           <div className="flex h-screen w-full items-center justify-center flex-col space-y-4">
-            <Spinner className="size-28 text-[#36363A]" />
-            <p className="text-sm font-medium text-[#36363A]">Loading...</p>
+            <Spinner className="size-28 text-[#36363A] dark:text-gray-200" />
+            <p className="text-sm font-medium text-[#36363A] dark:text-gray-200">Loading...</p>
           </div>
         }
       >
