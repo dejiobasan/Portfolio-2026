@@ -18,14 +18,14 @@ const testimonials = [
   },
   {
     name: "Oluwatobi Olajide",
-    role: "ALAT, Frontend Engineer",
+    role: "ALAT, Software Engineer",
     image: Tobi,
     testimonial:
       "Deji is a smart engineer, Working with him is a great experience. He's incredibly sharp with building systems and still manages to make everything feel simple and easy to work with.",
   },
   {
     name: "Cosmas Ezejiofor",
-    role: "ALAT, Frontend Engineer",
+    role: "ALAT, Software Engineer",
     image: Cosmas,
     testimonial:
       "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh.",
