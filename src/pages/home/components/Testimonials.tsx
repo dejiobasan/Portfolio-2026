@@ -1,5 +1,5 @@
 import { motion, type Variants } from "framer-motion";
-import { Gospel, Kola, Cosmas, Temi, Tobi, Jide } from "@/assets";
+import { Tobi, Jide } from "@/assets";
 
 const testimonials = [
   // {
