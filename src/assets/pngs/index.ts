@@ -1,4 +1,4 @@
-import HeZa from "./HeZa.png";
+import HeZa from "./Heza.png";
 import FraudShield from "./FraudShield.png";
 import CoopHub from "./Coophub.png";
 import MRTB from "./Mrtb.png";
