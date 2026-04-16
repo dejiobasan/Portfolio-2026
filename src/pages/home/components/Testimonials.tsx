@@ -1,5 +1,5 @@
 import { motion, type Variants } from "framer-motion";
-import { Tobi, Jide, Kola } from "@/assets";
+import { Tobi, Jide, Kola, Cosmas } from "@/assets";
 
 const testimonials = [
   // {
@@ -23,13 +23,13 @@ const testimonials = [
     testimonial:
       "Deji is a smart engineer. Working with him is a great experience. He's incredibly sharp with building systems and still manages to make everything feel simple and easy to work with.",
   },
-  // {
-  //   name: "Cosmas Ezejiofor",
-  //   role: "ALAT, Software Engineer",
-  //   image: Cosmas,
-  //   testimonial:
-  //     "Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris blandit egestas nibh.",
-  // },
+  {
+    name: "Cosmas Ezejiofor",
+    role: "ALAT, Software Engineer",
+    image: Cosmas,
+    testimonial:
+      "I currently work with Ayodeji at ALAT, and he is a highly dependable engineer. He consistently writes clean and maintainable code, and has a strong ability to break down complex solutions. I highly recommend him to any team.",
+  },
   // {
   //   name: "Temitope Ogundipe",
   //   role: "ALAT, Senior UI/UX Designer",
