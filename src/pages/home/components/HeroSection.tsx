@@ -72,7 +72,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 2.2, ease: "easeOut" }}
             >
-              A full-stack software engineer focused on building scalable web
+              A software engineer focused on building scalable web
               and mobile applications and modern digital platforms.
             </motion.p>
           </div>

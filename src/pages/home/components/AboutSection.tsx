@@ -31,7 +31,7 @@ const AboutSection = () => {
                 
                 <div>
                   <h3 className="text-xs font-bold tracking-wider text-white mb-1 uppercase">ROLE</h3>
-                  <p className="text-sm text-white/80">Full Stack Engineer</p>
+                  <p className="text-sm text-white/80">Software Engineer</p>
                 </div>
                 
                 <div>
@@ -63,7 +63,7 @@ const AboutSection = () => {
                 <section>
                   <h3 className="text-xl font-bold mb-3 text-white">Overview</h3>
                   <p className="text-sm text-white/80 leading-relaxed md:text-[15px]">
-                    A full-stack software engineer focused on building scalable web and mobile applications and modern digital platforms. With a background in electrical and computer engineering, development is approached with a systems-thinking mindset, designing software that is not only functional but reliable, efficient, and built to scale.
+                    A software engineer focused on building scalable web and mobile applications and modern digital platforms. With a background in electrical and computer engineering, development is approached with a systems-thinking mindset, designing software that is not only functional but reliable, efficient, and built to scale.
                   </p>
                 </section>
                 <section>
