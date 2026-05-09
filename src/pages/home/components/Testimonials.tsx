@@ -11,7 +11,7 @@ const testimonials = [
   // },
   {
     name: "Olajide Obasan",
-    role: "Lead Software Engineer, VolvLabs",
+    role: "VolvLabs, Lead Software Engineer",
     image: Jide,
     testimonial:
       "Deji is an exceptional engineer who consistently delivers scalable, well-structured solutions. His depth in full-stack development makes him a valuable asset to any team.",
@@ -39,7 +39,7 @@ const testimonials = [
   // },
   {
     name: "Kolawole Ayoola",
-    role: "Software Engineer, Moniepoint Group",
+    role: "Moniepoint, Software Engineer",
     image: Kola,
     testimonial:
       "Deji is a great colleague to work with, reliable, and deeply committed to delivering high-quality results. His work is always top-notch. Beyond his technical skills, he's a team player who communicates clearly, and is always willing to support others when needed. Any team would be fortunate to have him.",
