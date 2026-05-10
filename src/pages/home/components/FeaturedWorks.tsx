@@ -88,7 +88,7 @@ const FeaturedWorks = () => {
           </button>
         </div>
 
-        <h2 className="text-4xl md:text-[44px] font-bold text-[#36363A] dark:text-gray-100 order-1 md:order-2 md:absolute left-1/2 md:-translate-x-1/2 tracking-tight">
+        <h2 className="text-4xl lg:text-[44px] font-bold text-[#36363A] dark:text-gray-100 order-1 md:order-2 md:absolute left-1/2 md:-translate-x-1/2 tracking-tight">
           Featured Works
         </h2>
       </div>
